@@ -4,6 +4,7 @@ miniSQL
 ----
 本程序是数据库系统设计的课程作业，它是一个简单的SQL实现。
 使用visual 2013 编写。
+![structure](https://raw.githubusercontent.com/XiangTianxiao/miniSQL/master/doc/img/structure.svg)
 Buffer Manager
 ----
 ```cpp
