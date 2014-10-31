@@ -1,6 +1,8 @@
 miniSQL
 ====
-our course project for database design
+
+Buffer Manager
+----
 ```cpp
 //读取block，成功返回true，失败返回false
 bool bRead(block* b, string filename, int offset);
