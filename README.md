@@ -1,6 +1,9 @@
 miniSQL
 ====
-
+项目描述
+----
+本程序是数据库系统设计的课程作业，它是一个简单的SQL实现。
+使用visual 2013 编写。
 Buffer Manager
 ----
 ```cpp
