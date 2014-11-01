@@ -33,7 +33,7 @@ bool bwrite(block* b, string filename, int offset);
 int bNewBlock(string filename);
 //删除一个块，成功true，失败返回false
 //所谓的删除并非是删除一个块，之后后面的都向前移动一位，
-~~//而是在块分配表(另一个文件)中将之标记为删除。~~
+//而是在块的开头中将之标记为删除。
 bool bDeleteBlock(string filename, int offset);
 
 //立即将缓冲区内容写到磁盘
