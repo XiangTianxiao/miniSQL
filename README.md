@@ -55,7 +55,12 @@ bool bUnPin(string filename, int offset);
 数据表定义 | *.def | ascii | create table 中的定义,及其它
 B+数索引 | *.ind | ? | 数据内容的B+数索引
 
-创建一个表，产生这三个文件。表名就是文件的名称。如 create table a, 产生 a.blo a.def a.ind 三个文件<br><br>
+创建一个表，产生这三个文件。表名就是文件的名称。如 create table a, 产生 a.blo a.def a.ind 三个文件<br>
 
+* *.blo
 数据块的每条记录开头都有一个`标记位`，如果为true的话就说明这条记录是有效的，如果为false的话则说明这条记录无效。这样标记的话可以简单实现`懒惰删除`。<br>
 ![](https://github.com/XiangTianxiao/miniSQL/raw/master/doc/img/block.png)<br>
+* *.def
+blank
+* *.ind
+blank
