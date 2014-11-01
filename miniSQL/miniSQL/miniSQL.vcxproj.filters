@@ -42,6 +42,15 @@
     <ClInclude Include="error.h">
       <Filter>error_def</Filter>
     </ClInclude>
+    <ClInclude Include="attribute.h">
+      <Filter>catalog manager</Filter>
+    </ClInclude>
+    <ClInclude Include="database_def.h">
+      <Filter>catalog manager</Filter>
+    </ClInclude>
+    <ClInclude Include="table.h">
+      <Filter>catalog manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -52,6 +61,15 @@
     </ClCompile>
     <ClCompile Include="error.cpp">
       <Filter>error_def</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute.cpp">
+      <Filter>catalog manager</Filter>
+    </ClCompile>
+    <ClCompile Include="database_def.cpp">
+      <Filter>catalog manager</Filter>
+    </ClCompile>
+    <ClCompile Include="table.cpp">
+      <Filter>catalog manager</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

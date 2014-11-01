@@ -64,17 +64,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="attribute.h" />
     <ClInclude Include="catalog_manager.h" />
+    <ClInclude Include="database_def.h" />
     <ClInclude Include="error.h" />
     <ClInclude Include="ErrorCode.h" />
     <ClInclude Include="ErrorCode1.h" />
     <ClInclude Include="ErrorCode2.h" />
     <ClInclude Include="ErrorCode3.h" />
+    <ClInclude Include="table.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="attribute.cpp" />
     <ClCompile Include="catalog_manager.cpp" />
+    <ClCompile Include="database_def.cpp" />
     <ClCompile Include="error.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="table.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
