@@ -5,7 +5,7 @@ miniSQL
 ----
 本程序是数据库系统设计的课程作业，它是一个简单的SQL实现。它使用C++编写，使用visual studio 2013 组织工程文件。<br>
 整个程序结构如下<br>
-![](https://github.com/XiangTianxiao/miniSQL/raw/master/doc/img/structure.svg)
+![](https://github.com/XiangTianxiao/miniSQL/raw/master/doc/img/structure.png)
 
 错误代码定义
 ----
