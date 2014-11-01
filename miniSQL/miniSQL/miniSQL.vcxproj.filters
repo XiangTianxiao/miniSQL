@@ -17,31 +17,31 @@
     <Filter Include="catalog manager">
       <UniqueIdentifier>{6851335b-fd5c-434a-b844-ef362810a0a1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="error_def">
+      <UniqueIdentifier>{9ed755c1-6ca1-4754-9fef-938e4e38e712}</UniqueIdentifier>
+    </Filter>
     <Filter Include="API">
       <UniqueIdentifier>{5f1219ce-bd49-407f-be56-02323e8d4c3c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="error">
-      <UniqueIdentifier>{9ed755c1-6ca1-4754-9fef-938e4e38e712}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ErrorCode.h">
-      <Filter>error</Filter>
+      <Filter>error_def</Filter>
     </ClInclude>
     <ClInclude Include="ErrorCode1.h">
-      <Filter>error</Filter>
+      <Filter>error_def</Filter>
     </ClInclude>
     <ClInclude Include="ErrorCode2.h">
-      <Filter>error</Filter>
+      <Filter>error_def</Filter>
     </ClInclude>
     <ClInclude Include="ErrorCode3.h">
-      <Filter>error</Filter>
+      <Filter>error_def</Filter>
     </ClInclude>
     <ClInclude Include="catalog_manager.h">
       <Filter>catalog manager</Filter>
     </ClInclude>
     <ClInclude Include="error.h">
-      <Filter>error</Filter>
+      <Filter>error_def</Filter>
     </ClInclude>
     <ClInclude Include="attribute.h">
       <Filter>catalog manager</Filter>
@@ -61,7 +61,7 @@
       <Filter>catalog manager</Filter>
     </ClCompile>
     <ClCompile Include="error.cpp">
-      <Filter>error</Filter>
+      <Filter>error_def</Filter>
     </ClCompile>
     <ClCompile Include="attribute.cpp">
       <Filter>catalog manager</Filter>

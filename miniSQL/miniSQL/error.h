@@ -1,10 +1,8 @@
 #ifndef _ERROR_
 #define _ERROR_
-
 #include "ErrorCode.h"
 #include <string>
 using namespace std;
-
 class error
 {
 private:
@@ -14,7 +12,6 @@ private:
 	string description;		//√Ë ˆ
 public:
 	error();
-	error(int error_code, string module, string function, string description);
 	~error();
 
 	void error_occurred(int error_code, string module, string function, string description);

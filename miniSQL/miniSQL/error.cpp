@@ -1,16 +1,19 @@
 #include "error.h"
 
+
+error::error()
+{
+	error_code = EC_NO_ERROR;
+	function.clear();
+	module.clear();
+	description.clear();
+}
+
+
 error::~error()
 {
 }
 
-error::error(int error_code = EC_NO_ERROR, string module = "", string function = "", string description = "")
-{
-	error::error_code = error_code;
-	error::module = module;
-	error::function = function;
-	error::description = description;
-}
 
 void error::error_occurred(int error_code, string module = "", string function = "", string description = "")
 {
