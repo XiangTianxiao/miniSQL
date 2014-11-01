@@ -11,6 +11,8 @@ class table
 private:
 	map<string, attribute> attr;
 public:
+	table();
+	~table();
 	bool get_attribute(attribute& target, string attr_name);
 };
 
