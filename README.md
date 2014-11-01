@@ -33,7 +33,7 @@ bool bwrite(block* b, string filename, int offset);
 int bNewBlock(string filename);
 //删除一个块，成功true，失败返回false
 //所谓的删除并非是删除一个块，之后后面的都向前移动一位，
-//而是在块分配表(另一个文件)中将之标记为删除。
+~~//而是在块分配表(另一个文件)中将之标记为删除。~~
 bool bDeleteBlock(string filename, int offset);
 
 //立即将缓冲区内容写到磁盘
@@ -57,4 +57,5 @@ bool bUnPin(string filename, int offset);
 B+数索引 | *.ind | ? | 数据内容的B+数索引
 
 创建一个表，产生这~~四个~~三个文件。表名就是文件的名称。<br>
-如 create table a, 产生 a.blo ~~a.bat~~ a.def a.ind ~~四个~~三个文件
+如 create table a, 产生 a.blo ~~a.bat~~ a.def a.ind ~~四个~~三个文件<br>
+数据块的每条记录开头都有一个`标记位`，如果为true的话就说明这条记录是有效的，如果为false的话则说明这条记录无效。这样标记的话可以简单实现`懒惰删除`。
