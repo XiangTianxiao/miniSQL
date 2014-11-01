@@ -13,12 +13,16 @@ enum ATTRIBUTE_TYPE
 
 class attribute
 {
+private:
 	string name;
 	ATTRIBUTE_TYPE type;
 	int char_num;
 	bool primary;
 	bool unique;
 	bool index;
+public:
+	attribute();
+	~attribute();
 };
 
 #endif
