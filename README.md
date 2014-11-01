@@ -52,9 +52,9 @@ bool bUnPin(string filename, int offset);
 类型 | 扩展名 | 文本/二进制 | 描述
 ---- | ------ | ----------- | ----
 数据块 | *.blo | bin | 数据块，存储根本数据的
-块分配表 | *.bat | bin | 这个是数据块的索引,用于确定块的使用情况
+~~块分配表~~ | ~~*.bat~~ | ~~bin~~ | ~~这个是数据块的索引,用于确定块的使用情况~~
 数据表定义 | *.def | ? | create table 中的定义,及其它
 B+数索引 | *.ind | ? | 数据内容的B+数索引
 
-创建一个表，产生这四个文件。表名就是文件的名称。<br>
-如 create table a, 产生 a.blo a.bat a.def a.ind 四个文件
+创建一个表，产生这~~四个~~三个文件。表名就是文件的名称。<br>
+如 create table a, 产生 a.blo ~~a.bat~~ a.def a.ind ~~四个~~三个文件
