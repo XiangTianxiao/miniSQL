@@ -10,13 +10,13 @@ using namespace std;
 
 
 
-class database_def
+class database
 {
 private:
 	map<string, table> t;
 public:
-	database_def();
-	~database_def();
+	database();
+	~database();
 	bool get_attribute(attribute& target, string table_name, string attr_name);
 };
 
