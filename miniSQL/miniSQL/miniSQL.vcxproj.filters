@@ -13,19 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="catalog manager">
+      <UniqueIdentifier>{6851335b-fd5c-434a-b844-ef362810a0a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="error_def">
+      <UniqueIdentifier>{9ed755c1-6ca1-4754-9fef-938e4e38e712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API">
+      <UniqueIdentifier>{5f1219ce-bd49-407f-be56-02323e8d4c3c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ErrorCode.h">
-      <Filter>头文件</Filter>
+      <Filter>error_def</Filter>
     </ClInclude>
     <ClInclude Include="ErrorCode1.h">
-      <Filter>头文件</Filter>
+      <Filter>error_def</Filter>
     </ClInclude>
     <ClInclude Include="ErrorCode2.h">
-      <Filter>头文件</Filter>
+      <Filter>error_def</Filter>
     </ClInclude>
     <ClInclude Include="ErrorCode3.h">
-      <Filter>头文件</Filter>
+      <Filter>error_def</Filter>
     </ClInclude>
+    <ClInclude Include="catalog_manager.h">
+      <Filter>catalog manager</Filter>
+    </ClInclude>
+    <ClInclude Include="error.h">
+      <Filter>error_def</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="catalog_manager.cpp">
+      <Filter>catalog manager</Filter>
+    </ClCompile>
+    <ClCompile Include="error.cpp">
+      <Filter>error_def</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

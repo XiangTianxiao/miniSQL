@@ -64,10 +64,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="catalog_manager.h" />
+    <ClInclude Include="error.h" />
     <ClInclude Include="ErrorCode.h" />
     <ClInclude Include="ErrorCode1.h" />
     <ClInclude Include="ErrorCode2.h" />
     <ClInclude Include="ErrorCode3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="catalog_manager.cpp" />
+    <ClCompile Include="error.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
