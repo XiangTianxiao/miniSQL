@@ -5,7 +5,7 @@ miniSQL
 ----
 本程序是数据库系统设计的课程作业，它是一个简单的SQL实现。它使用C++编写，使用visual studio 2013 组织工程文件。<br>
 整个程序结构如下<br>
-![](https://github.com/XiangTianxiao/miniSQL/raw/master/doc/img/structure.png)
+![](https://github.com/XiangTianxiao/miniSQL/raw/master/doc/img/structure.png)<br>
 
 错误代码定义
 ----
@@ -52,10 +52,10 @@ bool bUnPin(string filename, int offset);
 类型 | 扩展名 | 文本/二进制 | 描述
 ---- | ------ | ----------- | ----
 数据块 | *.blo | bin | 数据块，存储根本数据的
-~~块分配表~~ | ~~*.bat~~ | ~~bin~~ | ~~这个是数据块的索引,用于确定块的使用情况~~
-数据表定义 | *.def | ? | create table 中的定义,及其它
+数据表定义 | *.def | ascii | create table 中的定义,及其它
 B+数索引 | *.ind | ? | 数据内容的B+数索引
 
-创建一个表，产生这~~四个~~三个文件。表名就是文件的名称。<br>
-如 create table a, 产生 a.blo ~~a.bat~~ a.def a.ind ~~四个~~三个文件<br>
-数据块的每条记录开头都有一个`标记位`，如果为true的话就说明这条记录是有效的，如果为false的话则说明这条记录无效。这样标记的话可以简单实现`懒惰删除`。
+创建一个表，产生这三个文件。表名就是文件的名称。如 create table a, 产生 a.blo a.def a.ind 三个文件<br><br>
+
+数据块的每条记录开头都有一个`标记位`，如果为true的话就说明这条记录是有效的，如果为false的话则说明这条记录无效。这样标记的话可以简单实现`懒惰删除`。<br>
+![](https://github.com/XiangTianxiao/miniSQL/raw/master/doc/img/block.png)<br>
