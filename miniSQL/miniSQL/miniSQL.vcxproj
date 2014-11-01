@@ -66,7 +66,7 @@
   <ItemGroup>
     <ClInclude Include="attribute.h" />
     <ClInclude Include="catalog_manager.h" />
-    <ClInclude Include="database.h" />
+    <ClInclude Include="database_def.h" />
     <ClInclude Include="error.h" />
     <ClInclude Include="ErrorCode.h" />
     <ClInclude Include="ErrorCode1.h" />
@@ -77,7 +77,7 @@
   <ItemGroup>
     <ClCompile Include="attribute.cpp" />
     <ClCompile Include="catalog_manager.cpp" />
-    <ClCompile Include="database.cpp" />
+    <ClCompile Include="database_def.cpp" />
     <ClCompile Include="error.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="table.cpp" />

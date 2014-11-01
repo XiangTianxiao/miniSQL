@@ -45,10 +45,10 @@
     <ClInclude Include="attribute.h">
       <Filter>catalog manager</Filter>
     </ClInclude>
-    <ClInclude Include="table.h">
+    <ClInclude Include="database_def.h">
       <Filter>catalog manager</Filter>
     </ClInclude>
-    <ClInclude Include="database.h">
+    <ClInclude Include="table.h">
       <Filter>catalog manager</Filter>
     </ClInclude>
   </ItemGroup>
@@ -65,10 +65,10 @@
     <ClCompile Include="attribute.cpp">
       <Filter>catalog manager</Filter>
     </ClCompile>
-    <ClCompile Include="table.cpp">
+    <ClCompile Include="database_def.cpp">
       <Filter>catalog manager</Filter>
     </ClCompile>
-    <ClCompile Include="database.cpp">
+    <ClCompile Include="table.cpp">
       <Filter>catalog manager</Filter>
     </ClCompile>
   </ItemGroup>

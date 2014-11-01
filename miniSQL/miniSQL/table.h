@@ -1,6 +1,5 @@
 #ifndef _TABLE_
 #define _TABLE_
-
 #include "attribute.h"
 #include <map>
 #include <string>
