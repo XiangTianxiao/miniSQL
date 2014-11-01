@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
@@ -72,4 +73,80 @@
       <Filter>catalog manager</Filter>
     </ClCompile>
   </ItemGroup>
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="catalog manager">
+      <UniqueIdentifier>{6851335b-fd5c-434a-b844-ef362810a0a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="error_def">
+      <UniqueIdentifier>{9ed755c1-6ca1-4754-9fef-938e4e38e712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API">
+      <UniqueIdentifier>{5f1219ce-bd49-407f-be56-02323e8d4c3c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ErrorCode.h">
+      <Filter>error_def</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorCode1.h">
+      <Filter>error_def</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorCode2.h">
+      <Filter>error_def</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorCode3.h">
+      <Filter>error_def</Filter>
+    </ClInclude>
+    <ClInclude Include="catalog_manager.h">
+      <Filter>catalog manager</Filter>
+    </ClInclude>
+    <ClInclude Include="error.h">
+      <Filter>error_def</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute.h">
+      <Filter>catalog manager</Filter>
+    </ClInclude>
+    <ClInclude Include="database_def.h">
+      <Filter>catalog manager</Filter>
+    </ClInclude>
+    <ClInclude Include="table.h">
+      <Filter>catalog manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="catalog_manager.cpp">
+      <Filter>catalog manager</Filter>
+    </ClCompile>
+    <ClCompile Include="error.cpp">
+      <Filter>error_def</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute.cpp">
+      <Filter>catalog manager</Filter>
+    </ClCompile>
+    <ClCompile Include="database_def.cpp">
+      <Filter>catalog manager</Filter>
+    </ClCompile>
+    <ClCompile Include="table.cpp">
+      <Filter>catalog manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+>>>>>>> origin/master
 </Project>

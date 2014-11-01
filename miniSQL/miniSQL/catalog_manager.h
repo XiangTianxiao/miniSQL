@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef _CATALOG_MANAGER_
 #define _CATALOG_MANAGER_
 
@@ -12,4 +13,11 @@ bool drop_index(database&d, string index_name);
 void catalog_init();
 void catalog_flush();
 
+=======
+#ifndef _CATALOG_MANAGER_
+#define _CATALOG_MANAGER_
+
+#include "database_def.h"
+
+>>>>>>> origin/master
 #endif /*_CATALOG_MANAGER_*/
