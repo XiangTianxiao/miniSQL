@@ -8,11 +8,15 @@ using namespace std;
 class table
 {
 private:
-	map<string, attribute> attr;
+	string m_name;
+	map<string, attribute> m_attr;
 public:
 	table();
+	table(string name);
 	~table();
-	bool get_attribute(attribute& target, string attr_name);
+	string get_name();
+	attribute& get_attribute(string attr_name);
+	void insert_attribute(attribute attr);
 };
 
 #endif

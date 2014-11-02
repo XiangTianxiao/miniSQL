@@ -14,7 +14,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="block.svg">
+   sodipodi:docname="block.svg"
+   inkscape:export-filename="D:\minisql\myminisql\miniSQL\doc\img\block.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,12 +27,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="218.92165"
-     inkscape:cy="557.91399"
+     inkscape:zoom="1.979899"
+     inkscape:cx="245.7181"
+     inkscape:cy="420.66485"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="false"
      inkscape:bbox-nodes="false"
@@ -47,7 +50,11 @@
      inkscape:window-height="848"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4387" />
+  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>

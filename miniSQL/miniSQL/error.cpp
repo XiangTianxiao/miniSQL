@@ -4,7 +4,7 @@ error::~error()
 {
 }
 
-error::error(int error_code = EC_NO_ERROR, string module = "", string function = "", string description = "")
+error::error(int error_code = NO_ERROR, string module = "", string function = "", string description = "")
 {
 	error::error_code = error_code;
 	error::module = module;
@@ -23,7 +23,7 @@ void error::error_occurred(int error_code, string module = "", string function =
 
 void error::clear()
 {
-	error_code = EC_NO_ERROR;
+	error_code = NO_ERROR;
 	function.clear();
 	module.clear();
 	description.clear();

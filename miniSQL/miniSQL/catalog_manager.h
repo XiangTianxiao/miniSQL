@@ -1,16 +1,28 @@
+#ifndef _CATALOG_MANAGER_DEF_
+#define _CATALOG_MANAGER_DEF_
 
-#ifndef _CATALOG_MANAGER_
-#define _CATALOG_MANAGER_
-
-#include "database.h"
-#include <string>
+#include <map>
+#include "table.h"
+#include "index.h"
 using namespace std;
 
-bool add_table(database& d, string table_name, table t);
-bool drop_table(database& d, string table_name);
-bool add_index(database& d, string table_name, string attribute_name, string index_name);
-bool drop_index(database&d, string index_name);
-void catalog_init();
-void catalog_flush();
 
-#endif /*_CATALOG_MANAGER_*/
+
+class catalog_manager
+{
+private:
+	map<string, table> m_t;
+	map<string, index> m_i;
+public:
+	catalog_manager();
+	~catalog_manager();
+	table& get_table(string name);
+	attribute& get_attribute(string table_name, string attr_name);
+	void add_table(table t);
+	void drop_table(string name);
+	void add_index(string table_name, string attr_name, string index_name);
+	void drop_index(string name);
+	void flush();
+};
+
+#endif
