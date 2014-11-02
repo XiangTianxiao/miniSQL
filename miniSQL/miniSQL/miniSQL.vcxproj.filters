@@ -14,6 +14,9 @@
     <ClCompile Include="catalog_manager.cpp">
       <Filter>catalog_manager</Filter>
     </ClCompile>
+    <ClCompile Include="index.cpp">
+      <Filter>catalog_manager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="attribute.h">
@@ -38,6 +41,9 @@
       <Filter>error</Filter>
     </ClInclude>
     <ClInclude Include="catalog_manager.h">
+      <Filter>catalog_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="index.h">
       <Filter>catalog_manager</Filter>
     </ClInclude>
   </ItemGroup>

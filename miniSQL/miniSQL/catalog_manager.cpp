@@ -3,6 +3,7 @@
 
 catalog_manager::catalog_manager()
 {
+
 }
 
 
@@ -57,9 +58,3 @@ void catalog_manager::drop_index(string name)
 	m_i.erase(name);
 	get_attribute(table, attr).index_off();
 }
-
-void catalog_manager::init()
-{
-
-}
-
