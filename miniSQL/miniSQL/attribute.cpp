@@ -3,6 +3,7 @@
 
 attribute::attribute()
 {
+	m_index = false;
 }
 
 attribute::attribute(string name, ATTRIBUTE_TYPE type, int char_num, bool primary, bool unique)
@@ -63,13 +64,20 @@ bool attribute::is_index()
 {
 	return m_index;
 }
-
+string attribute::get_index()
+{
+	return m_index_name;
+}
 void attribute::index_off()
 {
 	m_index = false;
+	m_index_name.clear();
 }
 
-void attribute::index_on()
+void attribute::index_on(string index_name)
 {
 	m_index = true;
+	if (index_name.size() == 0)
+		throw error(INDEX_NAME_CANT_BE_BLANK, "catalog manager", "index_on", "index的名字不能够为空");
+	m_index_name = index_name;
 }

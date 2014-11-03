@@ -9,3 +9,8 @@
 #define CAN_NOT_CREATE_TABLE															1008
 #define ALREADY_EXIST_SUCH_INDEX														1009
 #define NO_SUCH_INDEX																	1010
+#define CAN_NOT_OPEN_TABLE_FILE															1011
+#define CAN_NOT_OPEN_DEF_FILE															1012
+#define TAB_FILE_SYNTAX_ERROR															1013
+#define DEF_FILE_SYNTAX_ERROR															1014
+#define INDEX_NAME_CANT_BE_BLANK														1015

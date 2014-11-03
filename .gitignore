@@ -182,3 +182,9 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+
+#generate by program
+*.tab
+*.blo
+*.def
+*.ind

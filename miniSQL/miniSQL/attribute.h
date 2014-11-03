@@ -20,6 +20,7 @@ private:
 	bool m_primary;
 	bool m_unique;
 	bool m_index;
+	string m_index_name;
 public:
 	attribute();
 	attribute(string name, ATTRIBUTE_TYPE type, int char_num, bool primary, bool unique);
@@ -32,9 +33,18 @@ public:
 	bool is_primary();
 	bool is_unique();
 	bool is_index();
+	string get_index();
 
 	void index_off();
-	void index_on();
+	void index_on(string index_name);
+
+	//friend ofstream& operator<<(ofstream out, attribute attr);
 };
 
+//ofstream& operator<<(ofstream out, attribute attr)
+{
+	out << attr.m_name;
+
+	return out;
+}
 #endif

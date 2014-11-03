@@ -6,10 +6,11 @@ int main()
 {
 	try{
 		catalog_manager cm;
-		table t("t");
-		t.insert_attribute(attribute("a", ATTRIBUTE_TYPE::INT, false, false, false));
-		cm.add_table(t);
-		cm.add_index("t", "a", "i");
+		cm.load("t.tab");
+		//table t("t");
+		//t.insert_attribute(attribute("a", ATTRIBUTE_TYPE::INT, false, false, false));
+		//cm.add_table(t);
+		//cm.add_index("t", "a", "i");
 	}
 	catch (error e)
 	{

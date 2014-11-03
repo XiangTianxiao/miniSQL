@@ -4,6 +4,7 @@
 #include "attribute.h"
 #include <map>
 #include <string>
+#include <fstream>
 using namespace std;
 class table
 {
@@ -17,6 +18,16 @@ public:
 	string get_name();
 	attribute& get_attribute(string attr_name);
 	void insert_attribute(attribute attr);
+	friend ofstream& operator<<(ofstream out, table t);
 };
+
+ofstream& operator<<(ofstream out, table t)
+{
+	for (map<string, attribute>::iterator i = t.m_attr.begin(); i != t.m_attr.end(); i++)
+	{
+		//out << i->second;
+	}
+		return out;
+}
 
 #endif

@@ -13,6 +13,7 @@ class catalog_manager
 private:
 	map<string, table> m_t;
 	map<string, index> m_i;
+	void open_table(string table_name, string file_path);
 public:
 	catalog_manager();
 	~catalog_manager();
@@ -22,7 +23,8 @@ public:
 	void drop_table(string name);
 	void add_index(string table_name, string attr_name, string index_name);
 	void drop_index(string name);
-	void flush();
+	void load(string file_name);
+	void flush(string file_name);
 };
 
 #endif
