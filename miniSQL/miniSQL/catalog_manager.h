@@ -6,8 +6,6 @@
 #include "index.h"
 using namespace std;
 
-
-
 class catalog_manager
 {
 private:

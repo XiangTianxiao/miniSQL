@@ -57,10 +57,93 @@ B+数索引 | *.ind | ? | 数据内容的B+数索引
 
 创建一个表，产生这三个文件。表名就是文件的名称。如 create table a, 产生 a.blo a.def a.ind 三个文件<br>
 
-* *.blo
+* *.blo<br>
 数据块的每条记录开头都有一个`标记位`，如果为true的话就说明这条记录是有效的，如果为false的话则说明这条记录无效。这样标记的话可以简单实现`懒惰删除`。<br>
 ![](https://github.com/XiangTianxiao/miniSQL/raw/master/doc/img/block.png)<br>
-* *.def
+* *.def<br>
 blank
-* *.ind
+* *.ind<br>
 blank
+
+catalog manager
+----
+catalog manager 是一个类，使用的时候直接创建类即可：<br>
+```cpp
+catalog_manager cm;
+cm.load("t.tab");
+table t("t");
+t.insert_attribute(attribute("a", ATTRIBUTE_TYPE::INT, false, false));
+cm.add_table(t);
+cm.add_index("t", "a", "i");
+cm.flush("c.tab");
+```
+
+提供以下函数<br>
+```cpp
+	table& get_table(string name);
+	attribute& get_attribute(string table_name, string attr_name);
+	void add_table(table t);
+	void drop_table(string name);
+	void add_index(string table_name, string attr_name, string index_name);
+	void drop_index(string name);
+	void load(string file_name);
+	void flush(string file_name);
+```
+###table类
+```cpp
+class table
+{
+private:
+	string m_name;
+	map<string, attribute> m_attr;
+public:
+	table();
+	table(string name);
+	~table();
+	string get_name();
+	attribute& get_attribute(string attr_name);
+	void insert_attribute(attribute attr);
+	friend ostream& operator<<(ostream& out, table t);
+};
+```
+###attribute类
+```cpp
+class attribute
+{
+private:
+	string m_name;
+	ATTRIBUTE_TYPE m_type;
+	int m_char_num;
+	bool m_primary;
+	bool m_unique;
+	bool m_index;
+	string m_index_name;
+public:
+	attribute();
+	attribute(string name, ATTRIBUTE_TYPE type, int char_num, bool primary, bool unique);
+	attribute(string name, ATTRIBUTE_TYPE type, bool primary, bool unique);
+	~attribute();
+
+	string get_name();
+	ATTRIBUTE_TYPE get_type();
+	int get_char_num();
+	bool is_primary();
+	bool is_unique();
+	bool is_index();
+	string get_index();
+
+	void index_off();
+	void index_on(string index_name);
+
+	friend ostream& operator<<(ostream& out, attribute attr);
+};
+```
+###ATTRIBUTE_TYPE枚举
+```cpp
+enum ATTRIBUTE_TYPE
+{
+	INT,
+	CHAR,
+	FLOAT
+};
+```

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="513.78937"
+   height="196.94365"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="catalog_manager.svg"
+   inkscape:export-filename="D:\minisql\myminisql\miniSQL\doc\img\catalog_manager.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="331.6937"
+     inkscape:cy="138.02525"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1600"
+     inkscape:window-height="848"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="-71.605839px"
+       originy="-435.00943px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-71.605839,-420.4091)">
+    <g
+       id="g3226"
+       transform="matrix(0.61037515,0,0,0.61037515,59.227431,218.45905)">
+      <g
+         transform="translate(70,80)"
+         id="g3094">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect3092"
+           width="350"
+           height="60"
+           x="210"
+           y="252.36218" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Consolas;-inkscape-font-specification:Consolas"
+           x="220"
+           y="292.36218"
+           id="text3088"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3090"
+             x="220"
+             y="292.36218">catalog manager</tspan></text>
+      </g>
+      <g
+         id="g3116">
+        <g
+           id="g3104">
+          <g
+             id="g3099">
+            <rect
+               style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+               id="rect2987"
+               width="130"
+               height="60"
+               x="180"
+               y="502.36218" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+               x="190"
+               y="546.36218"
+               id="text2989"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan2991"
+                 x="190"
+                 y="546.36218"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas">table</tspan></text>
+          </g>
+          <text
+             sodipodi:linespacing="125%"
+             id="text2993"
+             y="592.36218"
+             x="200"
+             style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+             xml:space="preserve"><tspan
+               style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas"
+               y="592.36218"
+               x="200"
+               id="tspan2995"
+               sodipodi:role="line">&lt;map&gt;</tspan></text>
+        </g>
+        <g
+           transform="matrix(0.72,0,0,0.72,-36.24,74.741411)"
+           id="g3003-1">
+          <rect
+             y="752.36218"
+             x="80"
+             height="50"
+             width="180"
+             id="rect3001-7"
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text2997-4"
+             y="788.36218"
+             x="92"
+             style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+             xml:space="preserve"><tspan
+               style="font-size:32px;font-family:consolas;-inkscape-font-specification:consolas"
+               y="788.36218"
+               x="92"
+               id="tspan2999-0"
+               sodipodi:role="line">attribute</tspan></text>
+        </g>
+        <g
+           transform="matrix(0.72,0,0,0.72,103.76,74.741411)"
+           id="g3003-1-2">
+          <rect
+             y="752.36218"
+             x="80"
+             height="50"
+             width="180"
+             id="rect3001-7-4"
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text2997-4-5"
+             y="788.36218"
+             x="92"
+             style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+             xml:space="preserve"><tspan
+               style="font-size:32px;font-family:consolas;-inkscape-font-specification:consolas"
+               y="788.36218"
+               x="92"
+               id="tspan2999-0-5"
+               sodipodi:role="line">attribute</tspan></text>
+        </g>
+        <g
+           transform="matrix(0.72,0,0,0.72,243.76,74.741411)"
+           id="g3003-1-1">
+          <rect
+             y="752.36218"
+             x="80"
+             height="50"
+             width="180"
+             id="rect3001-7-7"
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text2997-4-1"
+             y="788.36218"
+             x="92"
+             style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+             xml:space="preserve"><tspan
+               style="font-size:32px;font-family:consolas;-inkscape-font-specification:consolas"
+               y="788.36218"
+               x="92"
+               id="tspan2999-0-1"
+               sodipodi:role="line">attribute</tspan></text>
+        </g>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 90,612.36218 150,-10 0,10"
+           id="path3112"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 240,602.36218 130,10"
+           id="path3114"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g3116-5"
+         transform="translate(430,0)">
+        <g
+           id="g3104-2">
+          <g
+             id="g3099-7">
+            <rect
+               style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+               id="rect2987-6"
+               width="130"
+               height="60"
+               x="180"
+               y="502.36218" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+               x="190"
+               y="546.36218"
+               id="text2989-1"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan2991-4"
+                 x="190"
+                 y="546.36218"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas">table</tspan></text>
+          </g>
+          <text
+             sodipodi:linespacing="125%"
+             id="text2993-2"
+             y="592.36218"
+             x="200"
+             style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+             xml:space="preserve"><tspan
+               style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:Consolas"
+               y="592.36218"
+               x="200"
+               id="tspan2995-3"
+               sodipodi:role="line">&lt;map&gt;</tspan></text>
+        </g>
+        <g
+           transform="matrix(0.72,0,0,0.72,-36.24,74.741411)"
+           id="g3003-1-22">
+          <rect
+             y="752.36218"
+             x="80"
+             height="50"
+             width="180"
+             id="rect3001-7-1"
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text2997-4-6"
+             y="788.36218"
+             x="92"
+             style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+             xml:space="preserve"><tspan
+               style="font-size:32px;font-family:consolas;-inkscape-font-specification:consolas"
+               y="788.36218"
+               x="92"
+               id="tspan2999-0-8"
+               sodipodi:role="line">attribute</tspan></text>
+        </g>
+        <g
+           transform="matrix(0.72,0,0,0.72,103.76,74.741411)"
+           id="g3003-1-2-5">
+          <rect
+             y="752.36218"
+             x="80"
+             height="50"
+             width="180"
+             id="rect3001-7-4-7"
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text2997-4-5-6"
+             y="788.36218"
+             x="92"
+             style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+             xml:space="preserve"><tspan
+               style="font-size:32px;font-family:consolas;-inkscape-font-specification:consolas"
+               y="788.36218"
+               x="92"
+               id="tspan2999-0-5-1"
+               sodipodi:role="line">attribute</tspan></text>
+        </g>
+        <g
+           transform="matrix(0.72,0,0,0.72,243.76,74.741411)"
+           id="g3003-1-1-8">
+          <rect
+             y="752.36218"
+             x="80"
+             height="50"
+             width="180"
+             id="rect3001-7-7-9"
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text2997-4-1-2"
+             y="788.36218"
+             x="92"
+             style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Microsoft YaHei;-inkscape-font-specification:Microsoft YaHei"
+             xml:space="preserve"><tspan
+               style="font-size:32px;font-family:consolas;-inkscape-font-specification:consolas"
+               y="788.36218"
+               x="92"
+               id="tspan2999-0-1-7"
+               sodipodi:role="line">attribute</tspan></text>
+        </g>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 90,612.36218 150,-10 0,10"
+           id="path3112-9"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 240,602.36218 130,10"
+           id="path3114-5"
+           inkscape:connector-curvature="0" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3220"
+         y="422.36218"
+         x="410"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Consolas;-inkscape-font-specification:Consolas"
+         xml:space="preserve"><tspan
+           y="422.36218"
+           x="410"
+           id="tspan3222"
+           sodipodi:role="line">&lt;map&gt;</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path3224"
+         d="m 250,492.36218 210,-60 220,60"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
