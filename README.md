@@ -67,6 +67,7 @@ blank
 
 catalog manager
 ----
+![](https://github.com/XiangTianxiao/miniSQL/blob/master/doc/img/catalog_manager.png)<br>
 catalog manager 是一个类，使用的时候直接创建类即可：<br>
 ```cpp
 catalog_manager cm;
