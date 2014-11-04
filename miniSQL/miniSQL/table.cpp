@@ -34,3 +34,13 @@ void table::insert_attribute(attribute attr)
 		throw error(ALREADY_EXIST_SUCH_ATTRIBUTE, "catalog manager", "insert_attribute", "无法插入，已经存在相同的列了");
 	m_attr[attr.get_name()] = attr;
 }
+
+ostream& operator<<(ostream& out, table t)
+{
+	for (map<string, attribute>::iterator i = t.m_attr.begin(); i != t.m_attr.end(); i++)
+	{
+		attribute a;
+		out << i->second;
+	}
+	return out;
+}

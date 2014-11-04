@@ -18,16 +18,9 @@ public:
 	string get_name();
 	attribute& get_attribute(string attr_name);
 	void insert_attribute(attribute attr);
-	friend ofstream& operator<<(ofstream out, table t);
+	friend ostream& operator<<(ostream& out, table t);
 };
 
-ofstream& operator<<(ofstream out, table t)
-{
-	for (map<string, attribute>::iterator i = t.m_attr.begin(); i != t.m_attr.end(); i++)
-	{
-		//out << i->second;
-	}
-		return out;
-}
+//ostream& operator<<(ostream& out, table t);
 
 #endif

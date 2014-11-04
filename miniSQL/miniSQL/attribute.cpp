@@ -81,3 +81,29 @@ void attribute::index_on(string index_name)
 		throw error(INDEX_NAME_CANT_BE_BLANK, "catalog manager", "index_on", "index的名字不能够为空");
 	m_index_name = index_name;
 }
+
+ostream& operator<<(ostream& out, attribute attr)
+{
+	out << attr.m_name << " ";
+	if (ATTRIBUTE_TYPE::CHAR == attr.m_type)
+		out << "CHAR " << attr.m_char_num << " ";
+	else if (ATTRIBUTE_TYPE::INT == attr.m_type)
+		out << "INT ";
+	else if (ATTRIBUTE_TYPE::FLOAT == attr.m_type)
+		out << "FLOAT ";
+	if (attr.m_primary)
+		out << "P ";
+	else
+		out << "N ";
+	if (attr.m_unique)
+		out << "U ";
+	else
+		out << "N ";
+	if (attr.m_index)
+		out << "I " << attr.m_index_name;
+	else
+		out << "N ";
+	out << endl;
+
+	return out;
+}

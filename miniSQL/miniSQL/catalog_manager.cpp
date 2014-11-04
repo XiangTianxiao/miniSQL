@@ -98,10 +98,8 @@ void catalog_manager::open_table(string table_name, string file_path)
 	bool b_unique;
 	bool b_index;
 	table t(table_name);
-	while (!infile.eof())
+	while (infile >> name)
 	{
-		//读入文件名
-		infile >> name;
 		//读入类型
 		infile >> type;
 		if (type == "CHAR" || type == "char")
@@ -178,6 +176,7 @@ void catalog_manager::open_table(string table_name, string file_path)
 		}
 	}
 	add_table(t);
+	infile.close();
 }
 
 void catalog_manager::flush(string file_name)
@@ -185,12 +184,18 @@ void catalog_manager::flush(string file_name)
 	//写入
 	ofstream tab_file;
 	tab_file.open(file_name);
+	if (!tab_file)
+		throw error(CAN_NOT_OPEN_TABLE_FILE, "catalog manager", "flush", "无法打开table文件进行写入！");
 	for (map<string, table>::iterator i = m_t.begin(); i != m_t.end(); i++)
 	{
 		string table_name = i->first;
 		tab_file << table_name << " " << table_name << ".def" << endl;
 		ofstream def_file;
 		def_file.open(i->first + ".def");
-		
+		if (!def_file)
+			throw error(CAN_NOT_OPEN_DEF_FILE, "catalog manager", "flush", "无法打开def文件进行写如！");
+		def_file << i->second;
+		def_file.close();
 	}
+	tab_file.close();
 }

@@ -2,6 +2,7 @@
 #define _ATTRIBUTE_
 
 #include <string>
+#include <fstream>
 using namespace std;
 
 enum ATTRIBUTE_TYPE
@@ -38,13 +39,8 @@ public:
 	void index_off();
 	void index_on(string index_name);
 
-	//friend ofstream& operator<<(ofstream out, attribute attr);
+	friend ostream& operator<<(ostream& out, attribute attr);
 };
 
-//ofstream& operator<<(ofstream out, attribute attr)
-{
-	out << attr.m_name;
 
-	return out;
-}
 #endif
