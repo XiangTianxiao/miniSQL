@@ -17,6 +17,15 @@
     <ClCompile Include="index.cpp">
       <Filter>catalog_manager</Filter>
     </ClCompile>
+    <ClCompile Include="record_manager.cpp">
+      <Filter>Record_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="element.cpp">
+      <Filter>Record_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="fitter.cpp">
+      <Filter>Record_manager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="attribute.h">
@@ -46,6 +55,22 @@
     <ClInclude Include="index.h">
       <Filter>catalog_manager</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="record_manager.h">
+      <Filter>Record_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="element.h">
+      <Filter>Record_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="fitter.h">
+      <Filter>Record_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>Buffer_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="block.h">
+      <Filter>Record_manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="catalog_manager">
@@ -54,5 +79,14 @@
     <Filter Include="error">
       <UniqueIdentifier>{4e63cbfb-c163-44b8-a3b1-89ac600d1486}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Record_manager">
+      <UniqueIdentifier>{f0c873af-744b-4c98-9b4d-38e68440b151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buffer_manager">
+      <UniqueIdentifier>{21c6e418-f539-4882-ba65-63081f088689}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="miniSQL.rc" />
   </ItemGroup>
 </Project>
