@@ -20,6 +20,7 @@ int main()
 			<< "error module = " << e.get_module() << endl
 			<< "error function = " << e.get_function() << endl
 			<< "error description = " << e.get_description() << endl;
+		
 	}
 	catch (...)
 	{

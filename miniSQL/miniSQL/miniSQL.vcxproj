@@ -72,6 +72,7 @@
     <ClInclude Include="ErrorCode2.h" />
     <ClInclude Include="ErrorCode3.h" />
     <ClInclude Include="index.h" />
+    <ClInclude Include="index_manager.h" />
     <ClInclude Include="table.h" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +80,7 @@
     <ClCompile Include="catalog_manager.cpp" />
     <ClCompile Include="error.cpp" />
     <ClCompile Include="index.cpp" />
+    <ClCompile Include="index_manager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="table.cpp" />
   </ItemGroup>

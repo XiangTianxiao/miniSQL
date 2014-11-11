@@ -17,6 +17,7 @@
     <ClCompile Include="index.cpp">
       <Filter>catalog_manager</Filter>
     </ClCompile>
+    <ClCompile Include="index_manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="attribute.h">
@@ -46,6 +47,7 @@
     <ClInclude Include="index.h">
       <Filter>catalog_manager</Filter>
     </ClInclude>
+    <ClInclude Include="index_manager.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="catalog_manager">
@@ -53,6 +55,9 @@
     </Filter>
     <Filter Include="error">
       <UniqueIdentifier>{4e63cbfb-c163-44b8-a3b1-89ac600d1486}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="record_manager">
+      <UniqueIdentifier>{bd94a54f-da03-4f1c-ac48-b32a8440f505}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
