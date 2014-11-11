@@ -19,6 +19,8 @@ public:
 	attribute& get_attribute(string attr_name);
 	void insert_attribute(attribute attr);
 	friend ostream& operator<<(ostream& out, table t);
+	map<string, attribute> get_table(){ return m_attr; };
+	int table_size() {return m_attr.size;};
 };
 
 //ostream& operator<<(ostream& out, table t);
