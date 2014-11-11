@@ -65,22 +65,34 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="attribute.h" />
+    <ClInclude Include="block.h" />
+    <ClInclude Include="Buffer.h" />
     <ClInclude Include="catalog_manager.h" />
+    <ClInclude Include="element.h" />
     <ClInclude Include="error.h" />
     <ClInclude Include="ErrorCode.h" />
     <ClInclude Include="ErrorCode1.h" />
     <ClInclude Include="ErrorCode2.h" />
     <ClInclude Include="ErrorCode3.h" />
+    <ClInclude Include="fitter.h" />
     <ClInclude Include="index.h" />
+    <ClInclude Include="record_manager.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="table.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="attribute.cpp" />
     <ClCompile Include="catalog_manager.cpp" />
+    <ClCompile Include="element.cpp" />
     <ClCompile Include="error.cpp" />
+    <ClCompile Include="fitter.cpp" />
     <ClCompile Include="index.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="record_manager.cpp" />
     <ClCompile Include="table.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="miniSQL.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
