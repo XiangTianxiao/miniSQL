@@ -1,9 +1,18 @@
-#ifndef _BLOCK_H_
-#define _BLOCK_H_
-#include <vector>
+#pragma once
+#include "typedef.h"
+#include <string>
 using namespace std;
-struct block
+
+class block
 {
-	char binblock[8*1024];
+public:
+	block();
+	block(string table_name, int offset, FILE_TYPE t);
+	~block();
+
+	string m_table_name;
+	BYTE m_data[4096];
+	int m_offset;
+	FILE_TYPE m_file_type;
 };
-#endif
+

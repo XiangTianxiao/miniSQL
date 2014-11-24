@@ -3,7 +3,7 @@
 
 attribute::attribute()
 {
-	m_index = false;
+	clear();
 }
 
 attribute::attribute(string name, ATTRIBUTE_TYPE type, int char_num, bool primary, bool unique)
@@ -46,7 +46,8 @@ ATTRIBUTE_TYPE attribute::get_type()
 int attribute::get_char_num()
 {
 	if (m_type != ATTRIBUTE_TYPE::CHAR)
-		throw error(ONLY_CHAR_HAS_LENGTH, "catalog manager", "get_char_num", "无法返回，只有char类型才能有长度，int和float没有长度");
+		//throw error(ONLY_CHAR_HAS_LENGTH, "catalog manager", "get_char_num", "无法返回，只有char类型才能有长度，int和float没有长度");
+		return 0;
 	return m_char_num;
 }
 
@@ -106,4 +107,44 @@ ostream& operator<<(ostream& out, attribute attr)
 	out << endl;
 
 	return out;
+}
+
+void attribute::set_name(string name)
+{
+	m_name = name;
+}
+void attribute::set_type(ATTRIBUTE_TYPE type)
+{
+	m_type = type;
+}
+void attribute::set_char_num(int num)
+{
+	if (m_type == CHAR)
+	{
+		if (num > 0 && num <= 255)
+			m_char_num = num;
+		else
+			throw error(0, "catalog manager", "set_char_num", "char 类型的大小应该大于等于1小于等于255");
+	}
+	else
+		throw error(0, "catalog manager", "set_char_num", "该属性不是char类型,无法设置char_num的大小");
+}
+void attribute::set_primary(bool p)
+{
+	m_primary = p;
+}
+void attribute::set_unique(bool u)
+{
+	m_unique = u;
+}
+
+void attribute::clear()
+{
+	m_name.clear();
+	m_type = INT;
+	m_char_num = 0;
+	m_primary = false;
+	m_unique = false;
+	m_index = false;
+	m_index_name.clear();
 }

@@ -1,6 +1,6 @@
-#ifndef _ERROR_
-#define _ERROR_
-
+//#ifndef _ERROR_
+//#define _ERROR_
+#pragma once
 #include "ErrorCode.h"
 #include <string>
 using namespace std;
@@ -25,4 +25,4 @@ public:
 	string get_description();
 };
 
-#endif
+//#endif

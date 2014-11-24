@@ -1,9 +1,10 @@
 #ifndef _BUFFER_MANAGER_H
 #define _BUFFER_MANAGER_H
 
-#include "block.h";
 #include <string>;
 using namespace std;
+
+
 
 //读取block，成功返回true，失败返回false
 bool bRead(block* b, string filename, int offset);

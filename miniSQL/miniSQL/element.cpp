@@ -1,48 +1,224 @@
 #include "element.h"
-#include <cassert>
-#include <cmath>
-#include <cstdio>
-bool element::operator < (const element &s) const {
-	assert(this->type==s.type);
-	switch (s.type) {
-	case 0:return this->datai < s.datai;
-	case 1:return this->dataf < s.dataf;
-	case 2:return this->datas < s.datas;			  
-	default: assert(false);
+#include "error.h"
+
+element::element()
+{
+}
+
+
+element::~element()
+{
+}
+
+bool element::operator<(element e)
+{
+	if (m_type != e.m_type)
+		throw error();
+	switch (m_type)
+	{
+	case ATTRIBUTE_TYPE::CHAR:
+		if (m_char < e.m_char)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::FLOAT:
+		if (m_float < e.m_float)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::INT:
+		if (m_int < e.m_int)
+			return true;
+		else
+			return false;
+		break;
+	default:
+		break;
 	}
+	throw error();
 }
-bool element::operator == (const element &s) const {
-	assert(this->type==s.type);
-	switch (s.type) {
-	case 0:return this->datai == s.datai;
-	case 1:return fabs(this->dataf-s.dataf)<1e-7;
-	case 2:return this->datas == s.datas;			  
-	default: assert(false);
-	}		
+bool element::operator==(element e)
+{
+	if (m_type != e.m_type)
+		throw error();
+	switch (m_type)
+	{
+	case ATTRIBUTE_TYPE::CHAR:
+		if (m_char == e.m_char)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::FLOAT:
+		if (m_float == e.m_float)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::INT:
+		if (m_int == e.m_int)
+			return true;
+		else
+			return false;
+		break;
+	default:
+		break;
+	}
+	throw error();
 }
-bool element::operator > (const element &s) const {
-	return !(*this<s || *this==s);
-}	
-bool element::operator >= (const element &s) const {
-	return (*this>s || *this==s);
-}	
-bool element::operator <= (const element &s) const {
-	return (*this<s || *this==s);
-}	
-bool element::operator != (const element &s) const {
-	return !(*this==s);
+bool element::operator>(element e)
+{
+	if (m_type != e.m_type)
+		throw error();
+	switch (m_type)
+	{
+	case ATTRIBUTE_TYPE::CHAR:
+		if (m_char > e.m_char)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::FLOAT:
+		if (m_float > e.m_float)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::INT:
+		if (m_int > e.m_int)
+			return true;
+		else
+			return false;
+		break;
+	default:
+		break;
+	}
+	throw error();
 }
-element::element():type(-1) {}
-element::element(int d):datai(d),type(0) {}
-element::element(float d):dataf(d),type(1) {}
-element::element(double d):dataf(d),type(1) {}
-element::element(string d):datas(d),type(2) {}	
-element::element(const char *d):datas(d),type(2) {}	
-void element::	 print() {
-	switch (type) {
-	case 0:printf("%d",datai); return;
-	case 1:printf("%f",dataf); return;
-	case 2:printf("%s",datas.c_str()); return;
-	default: assert(false);
-	}		
+
+bool element::operator!=(element e)
+{
+	if (m_type != e.m_type)
+		throw error();
+	switch (m_type)
+	{
+	case ATTRIBUTE_TYPE::CHAR:
+		if (m_char != e.m_char)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::FLOAT:
+		if (m_float != e.m_float)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::INT:
+		if (m_int != e.m_int)
+			return true;
+		else
+			return false;
+		break;
+	default:
+		break;
+	}
+	throw error();
+}
+
+bool element::operator>=(element e)
+{
+	if (m_type != e.m_type)
+		throw error();
+	switch (m_type)
+	{
+	case ATTRIBUTE_TYPE::CHAR:
+		if (m_char >= e.m_char)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::FLOAT:
+		if (m_float >= e.m_float)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::INT:
+		if (m_int >= e.m_int)
+			return true;
+		else
+			return false;
+		break;
+	default:
+		break;
+	}
+	throw error();
+}
+bool element::operator<=(element e)
+{
+	if (m_type != e.m_type)
+	throw error();
+	switch (m_type)
+	{
+	case ATTRIBUTE_TYPE::CHAR:
+		if (m_char <= e.m_char)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::FLOAT:
+		if (m_float <= e.m_float)
+			return true;
+		else
+			return false;
+		break;
+	case ATTRIBUTE_TYPE::INT:
+		if (m_int <= e.m_int)
+			return true;
+		else
+			return false;
+		break;
+	default:
+		break;
+	}
+	throw error();
+}
+
+element::element(string s, int char_num)
+{
+	m_type = ATTRIBUTE_TYPE::CHAR;
+	m_char = s;
+	m_char_num = char_num;
+}
+element::element(float f)
+{
+	m_type = ATTRIBUTE_TYPE::FLOAT;
+	m_float = f;
+}
+element::element(int i)
+{
+	m_type = ATTRIBUTE_TYPE::INT;
+	m_int = i;
+}
+
+ostream& operator<<(ostream& out, element e)
+{
+	switch (e.m_type)
+	{
+	case CHAR:
+		out << e.m_char;
+		break;
+	case FLOAT:
+		out << e.m_float;
+		break;
+	case INT:
+		out << e.m_int;
+		break;
+	default:
+		break;
+	}
+	return out;
 }

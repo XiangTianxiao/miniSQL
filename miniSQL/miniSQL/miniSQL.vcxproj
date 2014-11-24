@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0088AE20-451E-4B93-B019-5B1F2C33EC37}</ProjectGuid>
+    <ProjectGuid>{50D8B26E-4CE2-43ED-857D-AD726DC24745}</ProjectGuid>
     <RootNamespace>miniSQL</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -64,25 +64,52 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="API.cpp" />
+    <ClCompile Include="attribute.cpp" />
+    <ClCompile Include="block.cpp" />
+    <ClCompile Include="buffer_manager.cpp" />
+    <ClCompile Include="catalog_manager.cpp" />
+    <ClCompile Include="comparison.cpp" />
+    <ClCompile Include="element.cpp" />
+    <ClCompile Include="elements_offset.cpp" />
+    <ClCompile Include="error.cpp" />
+    <ClCompile Include="index.cpp" />
+    <ClCompile Include="index_list.cpp" />
+    <ClCompile Include="index_manager.cpp" />
+    <ClCompile Include="interpreter.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main1.cpp" />
+    <ClCompile Include="main2.cpp" />
+    <ClCompile Include="record.cpp" />
+    <ClCompile Include="record_manager.cpp" />
+    <ClCompile Include="selection.cpp" />
+    <ClCompile Include="table.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="API.h" />
     <ClInclude Include="attribute.h" />
+    <ClInclude Include="block.h" />
+    <ClInclude Include="buffer_manager.h" />
     <ClInclude Include="catalog_manager.h" />
+    <ClInclude Include="comparison.h" />
+    <ClInclude Include="element.h" />
+    <ClInclude Include="elements_offset.h" />
     <ClInclude Include="error.h" />
     <ClInclude Include="ErrorCode.h" />
     <ClInclude Include="ErrorCode1.h" />
     <ClInclude Include="ErrorCode2.h" />
     <ClInclude Include="ErrorCode3.h" />
+    <ClInclude Include="global.cpp" />
+    <ClInclude Include="global.h" />
     <ClInclude Include="index.h" />
+    <ClInclude Include="index_list.h" />
     <ClInclude Include="index_manager.h" />
+    <ClInclude Include="interpreter.h" />
+    <ClInclude Include="record.h" />
+    <ClInclude Include="record_manager.h" />
+    <ClInclude Include="selection.h" />
     <ClInclude Include="table.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="attribute.cpp" />
-    <ClCompile Include="catalog_manager.cpp" />
-    <ClCompile Include="error.cpp" />
-    <ClCompile Include="index.cpp" />
-    <ClCompile Include="index_manager.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="table.cpp" />
+    <ClInclude Include="typedef.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

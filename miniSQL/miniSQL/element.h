@@ -1,26 +1,33 @@
-#ifndef _ELEMENT_H_
-#define _ELEMENT_H_
+#pragma once
+#include "typedef.h"
 #include <string>
 using namespace std;
-class element {
-public :
-	int datai;
-	float dataf;
-	string datas;
-	int type; // 0: int 1: float 2:string -1:invalid;
-	bool operator < (const element &s) const ;
-	bool operator == (const element &s) const ;
-	bool operator > (const element &s) const ;
-	bool operator >= (const element &s) const ;
-	bool operator <= (const element &s) const ;
-	bool operator != (const element &s) const ;	
-	element(); 
-	element(int d);
-	element(float d); 
-	element(double d);
-	element(string d);
-	element(const char *d);
-	void print();
+
+class element
+{
+public:
+	element();
+	~element();
+
+	int m_int;
+	float m_float;
+	string m_char;
+
+	int m_char_num;
+
+	ATTRIBUTE_TYPE m_type;
+
+	bool operator<(element e);
+	bool operator==(element e);
+	bool operator>(element e);
+	bool operator>=(element e);
+	bool operator<=(element e);
+	bool operator!=(element e);
+
+	friend ostream& operator<<(ostream& out, element e);
+
+	element(string s, int char_num);
+	element(float f);
+	element(int i);
 };
 
-#endif

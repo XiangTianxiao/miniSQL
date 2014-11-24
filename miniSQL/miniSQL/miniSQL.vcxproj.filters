@@ -1,26 +1,116 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="buffer_manager">
+      <UniqueIdentifier>{49d5efe3-9c28-4774-8311-a39a18610807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="catalog_manager">
+      <UniqueIdentifier>{a3e4a637-8f54-4211-8726-ee2f1c94fdcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="index_manager">
+      <UniqueIdentifier>{c4757243-3d56-4307-83d7-e594270b595e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="error">
+      <UniqueIdentifier>{4d2933cd-6df1-46c5-b768-53498e68f2ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="全局定义">
+      <UniqueIdentifier>{9841378c-c040-45f1-a01c-4376fd8e1f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="record_manager">
+      <UniqueIdentifier>{74920089-f430-4223-9630-917b3a5fa059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API">
+      <UniqueIdentifier>{f5c98ae5-d726-4e53-883c-b2f1f36e0bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interpreter">
+      <UniqueIdentifier>{706b7794-bc1b-4941-a806-ec486ef2992b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="block.cpp">
+      <Filter>buffer_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer_manager.cpp">
+      <Filter>buffer_manager</Filter>
+    </ClCompile>
     <ClCompile Include="attribute.cpp">
+      <Filter>catalog_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="catalog_manager.cpp">
       <Filter>catalog_manager</Filter>
     </ClCompile>
     <ClCompile Include="table.cpp">
       <Filter>catalog_manager</Filter>
     </ClCompile>
-    <ClCompile Include="error.cpp">
-      <Filter>error</Filter>
-    </ClCompile>
-    <ClCompile Include="catalog_manager.cpp">
-      <Filter>catalog_manager</Filter>
+    <ClCompile Include="index_manager.cpp">
+      <Filter>index_manager</Filter>
     </ClCompile>
     <ClCompile Include="index.cpp">
       <Filter>catalog_manager</Filter>
     </ClCompile>
-    <ClCompile Include="index_manager.cpp" />
+    <ClCompile Include="error.cpp">
+      <Filter>error</Filter>
+    </ClCompile>
+    <ClCompile Include="record_manager.cpp">
+      <Filter>record_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="element.cpp">
+      <Filter>record_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="record.cpp">
+      <Filter>record_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="comparison.cpp">
+      <Filter>record_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="selection.cpp">
+      <Filter>record_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="elements_offset.cpp">
+      <Filter>index_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="index_list.cpp">
+      <Filter>index_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="main2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="API.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="interpreter.cpp">
+      <Filter>interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="main1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="block.h">
+      <Filter>buffer_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer_manager.h">
+      <Filter>buffer_manager</Filter>
+    </ClInclude>
     <ClInclude Include="attribute.h">
+      <Filter>catalog_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="catalog_manager.h">
       <Filter>catalog_manager</Filter>
     </ClInclude>
     <ClInclude Include="table.h">
@@ -41,23 +131,47 @@
     <ClInclude Include="ErrorCode3.h">
       <Filter>error</Filter>
     </ClInclude>
-    <ClInclude Include="catalog_manager.h">
-      <Filter>catalog_manager</Filter>
+    <ClInclude Include="index_manager.h">
+      <Filter>index_manager</Filter>
     </ClInclude>
     <ClInclude Include="index.h">
       <Filter>catalog_manager</Filter>
     </ClInclude>
-    <ClInclude Include="index_manager.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="catalog_manager">
-      <UniqueIdentifier>{b8567c05-d2c9-40bc-a3ed-4698b2170fb8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="error">
-      <UniqueIdentifier>{4e63cbfb-c163-44b8-a3b1-89ac600d1486}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="record_manager">
-      <UniqueIdentifier>{bd94a54f-da03-4f1c-ac48-b32a8440f505}</UniqueIdentifier>
-    </Filter>
+    <ClInclude Include="global.cpp">
+      <Filter>全局定义</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>全局定义</Filter>
+    </ClInclude>
+    <ClInclude Include="typedef.h">
+      <Filter>全局定义</Filter>
+    </ClInclude>
+    <ClInclude Include="record_manager.h">
+      <Filter>record_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="element.h">
+      <Filter>record_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="record.h">
+      <Filter>record_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="comparison.h">
+      <Filter>record_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="selection.h">
+      <Filter>record_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="elements_offset.h">
+      <Filter>index_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="index_list.h">
+      <Filter>index_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="API.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="interpreter.h">
+      <Filter>interpreter</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

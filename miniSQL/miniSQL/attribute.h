@@ -3,14 +3,10 @@
 
 #include <string>
 #include <fstream>
+#include "typedef.h"
 using namespace std;
 
-enum ATTRIBUTE_TYPE
-{
-	INT,
-	CHAR,
-	FLOAT
-};
+
 
 class attribute
 {
@@ -40,6 +36,14 @@ public:
 	void index_on(string index_name);
 
 	friend ostream& operator<<(ostream& out, attribute attr);
+
+	void set_name(string name);
+	void set_type(ATTRIBUTE_TYPE type);
+	void set_char_num(int num);
+	void set_primary(bool p);
+	void set_unique(bool u);
+
+	void clear();
 };
 
 

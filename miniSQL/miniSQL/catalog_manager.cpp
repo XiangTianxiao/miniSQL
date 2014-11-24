@@ -4,11 +4,13 @@
 
 catalog_manager::catalog_manager()
 {
+	load();
 }
 
 
 catalog_manager::~catalog_manager()
 {
+	flush();
 }
 
 table& catalog_manager::get_table(string name)
@@ -38,6 +40,8 @@ void catalog_manager::drop_table(string name)
 	if (m_t.find(name) == m_t.end())
 		throw error(NO_SUCH_TABLE, "catalog manager", "drop_table", "无法找到，不存在这个名字的表");
 	m_t.erase(name);
+	remove((name + ".def").c_str());
+	
 }
 
 void catalog_manager::add_index(string table_name, string attr_name, string index_name)
@@ -45,8 +49,10 @@ void catalog_manager::add_index(string table_name, string attr_name, string inde
 	if (m_i.find(index_name) != m_i.end())
 		throw error(ALREADY_EXIST_SUCH_INDEX, "catalog manager", "add_index", "无法插入，已经存在相同的索引了");
 	attribute& attr = get_attribute(table_name, attr_name);
+	if (attr.is_unique() == false)
+		throw error(0, "catalog manager", "add_index", "无法建立索引，因为目标属性不是unique的");
 	attr.index_on(index_name);
-	m_i[index_name] = index(index_name, table_name, attr_name);
+	m_i[index_name] = index(index_name, table_name, attr_name, attr.get_type(), attr.get_char_num());
 }
 
 void catalog_manager::drop_index(string name)
@@ -59,8 +65,9 @@ void catalog_manager::drop_index(string name)
 	get_attribute(table, attr).index_off();
 }
 
-void catalog_manager::load(string file_name)
+void catalog_manager::load()
 {
+	string file_name = "database";
 	m_t.clear();
 	m_i.clear();
 	ifstream infile;
@@ -69,9 +76,9 @@ void catalog_manager::load(string file_name)
 		throw error(CAN_NOT_OPEN_TABLE_FILE, "catalog manager", "load", "无法打开table文件");
 	string table_name;
 	string file_path;
-	while (!infile.eof())
+	while (!(infile >> table_name).eof())
 	{
-		infile >> table_name >> file_path;
+		infile >> file_path;
 		if (table_name.size() == 0)
 			throw error(TAB_FILE_SYNTAX_ERROR, "catalog manager", "load", "table文件语法错误");
 		open_table(table_name, file_path);
@@ -172,15 +179,16 @@ void catalog_manager::open_table(string table_name, string file_path)
 			//这样直接插入不太好
 			if (m_i.find(index_name) != m_i.end())
 				throw error(ALREADY_EXIST_SUCH_INDEX, "catalog manager", "add_index", "无法插入，已经存在相同的索引了");
-			m_i[index_name] = index(index_name, table_name, name);
+			m_i[index_name] = index(index_name, table_name, name, t.get_attribute(name).get_type(), t.get_attribute(name).get_char_num());
 		}
 	}
 	add_table(t);
 	infile.close();
 }
 
-void catalog_manager::flush(string file_name)
+void catalog_manager::flush()
 {
+	string file_name = "database";
 	//写入
 	ofstream tab_file;
 	tab_file.open(file_name);
@@ -198,4 +206,9 @@ void catalog_manager::flush(string file_name)
 		def_file.close();
 	}
 	tab_file.close();
+}
+
+map<string, index> catalog_manager::get_all_index()
+{
+	return m_i;
 }

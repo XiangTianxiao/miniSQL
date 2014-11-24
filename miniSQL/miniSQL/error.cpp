@@ -1,5 +1,11 @@
 #include "error.h"
-
+error::error()
+{
+	error_code = NO_ERROR;
+	module = "";
+	function = "";
+	description = "";
+}
 error::~error()
 {
 }
